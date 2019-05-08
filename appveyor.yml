@@ -1,0 +1,3 @@
+install:
+  - ps: nuget restore OpenConsole.sln
+  

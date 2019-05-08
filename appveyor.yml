@@ -1,5 +1,5 @@
 install:
-  - ps: git submodule update --init --recursive
+  - cmd: git submodule update --init --recursive
   - ps: nuget restore OpenConsole.sln
   
 build:

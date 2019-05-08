@@ -5,4 +5,6 @@ install:
 build:
   parallel: true                  # enable MSBuild parallel builds
   project: OpenConsole.sln      # path to Visual Studio solution or project
-  
+
+platform: x64
+configuration: Release

@@ -9,3 +9,5 @@ build:
 platform: x64
 configuration: Release
 image: Visual Studio 2017
+artifacts:
+  - path: pkg\appx\AppPackages\OpenConsolePackage_0.9.0.0_x64_Test

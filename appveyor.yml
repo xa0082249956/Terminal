@@ -1,0 +1,13 @@
+install:
+  - cmd: git submodule update --init --recursive
+  - ps: nuget restore OpenConsole.sln
+  
+build:
+  parallel: true                  # enable MSBuild parallel builds
+  project: OpenConsole.sln      # path to Visual Studio solution or project
+
+platform: x64
+configuration: Release
+image: Visual Studio 2017
+artifacts:
+  - path: pkg\appx\AppPackages\OpenConsolePackage_0.9.0.0_x64_Test
